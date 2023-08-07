@@ -46,24 +46,21 @@ a {
   );
   background-size: 200% 100%;
   background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 a:before{
   content: '';
   background: #ffffff;
-  display: block;
   position: absolute;
   bottom: -3px;
   left: 0;
   width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
+  height: 2px;
+  transition: all 0.4s ease-in-out;
 }
 
 a:hover {
@@ -72,6 +69,11 @@ a:hover {
 
 a:hover::before{
   width: 100%;
+}
+
+.icon {
+  width: 60px;
+  margin: 45px;
 }
 
 .title-container {
@@ -84,6 +86,7 @@ a:hover::before{
   color: white;
   font-size: 60px;
   font-family: 'chakra-reg';
+  text-align: center;
 }
 
 .portfolio {
